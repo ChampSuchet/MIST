@@ -1,0 +1,6 @@
+wget https://artifacts.picoctf.net/c/312/imp.red
+vi imp.red
+change mov 0,1 to mov 1,1
+save it 
+nc saturn.picoctf.net 53068 < imp.red  connect to this server
+you will get the flag
