@@ -1,0 +1,9 @@
+wget https://artifacts.picoctf.net/c_rhea/12/challenge.zip, then unzip challenge.zip
+cd home/ctf-player/drop-in to get to the files.
+use ls three things can be seen: checksum.txt, decrypt.sh, and a files directory
+then cat checksum.txt
+fba9f49bf22aa7188a155768ab0dfdc1f9b86c47976cd0f7c9003af2e20598f7 would appear
+sha256sum files/* | grep fba9f49bf22aa7188a155768ab0dfdc1f9b86c47976cd0f7c9003af2e20598f7
+fba9f49bf22aa7188a155768ab0dfdc1f9b86c47976cd0f7c9003af2e20598f7  files/87590c24 you will get this
+ ./decrypt.sh files/87590c24
+after this flag will appear
